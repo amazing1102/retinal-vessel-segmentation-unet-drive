@@ -21,13 +21,13 @@ pip install torch torchvision pillow numpy
 脚本默认读取以下数据集目录：
 
 ```text
-C:\Users\33603\Desktop\课程作业\人工智能\第五次\DRIVE
+C:\Users\33603\Desktop\DRIVE
 ```
 
 默认输出目录：
 
 ```text
-C:\Users\33603\Desktop\课程作业\人工智能\第五次\实验五代码\outputs
+C:\Users\33603\Desktop\outputs
 ```
 
 ## 运行方式
