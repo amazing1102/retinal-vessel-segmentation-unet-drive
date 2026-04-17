@@ -2,11 +2,15 @@
 
 [中文](#中文说明) | [English](#english)
 
+A compact PyTorch project for retinal vessel segmentation on the DRIVE dataset, built around the classic U-Net architecture and organized for coursework, reproducibility, and portfolio presentation.
+
 ## 中文说明
 
 ### 项目简介
 
 本项目基于 `PyTorch` 实现了一个用于 `DRIVE` 数据集的视网膜血管分割实验，核心模型为经典的 `U-Net`。项目涵盖了数据读取、模型构建、训练验证、分割指标评估以及测试集预测结果导出等完整流程，适合作为医学图像分割课程实验、作业展示或入门项目参考。
+
+如果你希望把它作为 GitHub 作品集项目展示，这个仓库的定位可以概括为：一个结构清晰、可直接运行、面向医学图像分割入门与课程展示的 U-Net 实践项目。
 
 ### 项目亮点
 
@@ -37,7 +41,7 @@ retinal-vessel-segmentation-unet-drive/
 建议使用 Python 3.9 及以上版本，并安装以下依赖：
 
 ```powershell
-pip install torch torchvision pillow numpy
+pip install -r requirements.txt
 ```
 
 ### 运行方法
@@ -113,7 +117,7 @@ retinal-vessel-segmentation-unet-drive/
 It is recommended to use Python 3.9 or later. Install dependencies with:
 
 ```powershell
-pip install torch torchvision pillow numpy
+pip install -r requirements.txt
 ```
 
 ### Usage
@@ -152,3 +156,9 @@ After execution, the script will:
 - AI and medical image processing coursework
 - Introductory practice for U-Net-based segmentation
 - Clean GitHub presentation for academic projects
+
+### Portfolio-Style Repository Description
+
+You can use the following short description as your GitHub repository summary:
+
+`PyTorch implementation of retinal vessel segmentation on the DRIVE dataset using U-Net, with training, validation, and prediction export for medical image segmentation coursework and portfolio presentation.`
