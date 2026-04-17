@@ -8,17 +8,17 @@ A compact PyTorch project for retinal vessel segmentation on the DRIVE dataset, 
 
 ### 项目简介
 
-本项目基于 `PyTorch` 实现了一个用于 `DRIVE` 数据集的视网膜血管分割实验，核心模型为经典的 `U-Net`。项目涵盖了数据读取、模型构建、训练验证、分割指标评估以及测试集预测结果导出等完整流程，适合作为医学图像分割课程实验、作业展示或入门项目参考。
+本项目基于 `PyTorch` 实现了一个面向 `DRIVE` 数据集的视网膜血管分割实验，核心模型为经典的 `U-Net`。项目包含数据读取、模型构建、训练验证、分割指标评估和测试集预测结果导出等完整流程，适合作为医学图像分割课程实验、作业展示或入门项目参考。
 
-如果你希望把它作为 GitHub 作品集项目展示，这个仓库的定位可以概括为：一个结构清晰、可直接运行、面向医学图像分割入门与课程展示的 U-Net 实践项目。
+如果你希望把它作为 GitHub 作品集项目展示，这个仓库可以概括为：一个结构清晰、可直接运行、适合课程展示与医学图像分割入门的 U-Net 实践项目。
 
 ### 项目亮点
 
 - 基于 `U-Net` 的视网膜血管语义分割实现
-- 适配 `DRIVE` 数据集目录结构
-- 包含训练、验证、测试预测完整流程
+- 适配标准 `DRIVE` 数据集目录结构
+- 包含训练、验证和测试预测的完整流程
 - 输出 `Precision`、`Recall`、`F1-Score`、`IoU`、`Accuracy`
-- 提供实验文档与报告草稿，便于课程展示
+- 保留精简文档说明，便于课程展示与代码理解
 
 ### 项目结构
 
@@ -27,18 +27,18 @@ retinal-vessel-segmentation-unet-drive/
 |-- data/
 |   `-- DRIVE/                         # DRIVE dataset
 |-- docs/
-|   |-- experiment_description.docx   # 实验要求
-|   |-- report_draft_group7.docx      # 报告草稿
-|   `-- assignment_notes.md           # 代码说明
+|   `-- assignment_notes.md           # 代码说明与实验备注
 |-- src/
 |   `-- train_unet_drive.py           # 训练与预测主脚本
+|-- LICENSE
+|-- requirements.txt
 |-- .gitignore
 `-- README.md
 ```
 
 ### 环境依赖
 
-建议使用 Python 3.9 及以上版本，并安装以下依赖：
+建议使用 Python 3.9 及以上版本，并执行：
 
 ```powershell
 pip install -r requirements.txt
@@ -72,11 +72,12 @@ python .\src\train_unet_drive.py --epochs 50 --batch-size 2 --lr 0.001
 
 - 当前仓库中的 `DRIVE/test` 不包含 `1st_manual` 人工标注。
 - 因此，代码默认在验证集上统计分割指标，在测试集上仅保存预测结果。
-- `.idea`、缓存文件和输出结果已通过 `.gitignore` 排除，不会影响公开展示。
+- 为了让仓库更轻量、更适合公开展示，`.docx` 文件不纳入版本管理。
+- `.idea`、缓存文件和输出结果已通过 `.gitignore` 排除。
 
 ### 适用场景
 
-- 人工智能/医学图像处理课程实验
+- 人工智能或医学图像处理课程实验
 - U-Net 语义分割入门实践
 - GitHub 项目展示与课程作业归档
 
@@ -86,7 +87,9 @@ python .\src\train_unet_drive.py --epochs 50 --batch-size 2 --lr 0.001
 
 ### Overview
 
-This project provides a `PyTorch` implementation of retinal vessel segmentation on the `DRIVE` dataset using the classic `U-Net` architecture. It includes the full experimental pipeline: dataset loading, model construction, training, validation, segmentation metric evaluation, and test prediction export.
+This project provides a `PyTorch` implementation of retinal vessel segmentation on the `DRIVE` dataset using the classic `U-Net` architecture. It covers the full experimental pipeline, including dataset loading, model construction, training, validation, metric evaluation, and test prediction export.
+
+As a portfolio-ready GitHub repository, this project is designed to be clean, runnable, and easy to understand for coursework and introductory medical image segmentation practice.
 
 ### Highlights
 
@@ -94,7 +97,7 @@ This project provides a `PyTorch` implementation of retinal vessel segmentation 
 - Compatible with the standard DRIVE folder structure
 - End-to-end workflow for training, validation, and inference
 - Reports `Precision`, `Recall`, `F1-Score`, `IoU`, and `Accuracy`
-- Includes experiment documents and report materials for academic use
+- Includes lightweight notes for academic reference and code explanation
 
 ### Project Structure
 
@@ -103,11 +106,11 @@ retinal-vessel-segmentation-unet-drive/
 |-- data/
 |   `-- DRIVE/                         # DRIVE dataset
 |-- docs/
-|   |-- experiment_description.docx   # Assignment description
-|   |-- report_draft_group7.docx      # Draft report
 |   `-- assignment_notes.md           # Notes for the implementation
 |-- src/
 |   `-- train_unet_drive.py           # Main training and inference script
+|-- LICENSE
+|-- requirements.txt
 |-- .gitignore
 `-- README.md
 ```
@@ -149,6 +152,7 @@ After execution, the script will:
 - The current `DRIVE/test` folder in this repository does not contain `1st_manual` annotations.
 - As a result, segmentation metrics are computed on the validation subset instead of the test set.
 - The test set is used for prediction export only.
+- `.docx` files are intentionally excluded to keep the repository lightweight and presentation-friendly.
 - `.idea`, cache files, and generated outputs are excluded via `.gitignore`.
 
 ### Use Cases
