@@ -160,9 +160,3 @@ After execution, the script will:
 - AI and medical image processing coursework
 - Introductory practice for U-Net-based segmentation
 - Clean GitHub presentation for academic projects
-
-### Portfolio-Style Repository Description
-
-You can use the following short description as your GitHub repository summary:
-
-`PyTorch implementation of retinal vessel segmentation on the DRIVE dataset using U-Net, with training, validation, and prediction export for medical image segmentation coursework and portfolio presentation.`
